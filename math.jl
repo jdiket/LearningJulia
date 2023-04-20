@@ -8,5 +8,8 @@ function factorial(n::Int)
     end
 end
 
-number = 5
-println("Factorial of $number is: ", factorial(number))
+println("Enter a non-negative integer:")
+number = parse(Int, readline())
+
+result = factorial(number)
+println("Factorial of $number is: $result")
